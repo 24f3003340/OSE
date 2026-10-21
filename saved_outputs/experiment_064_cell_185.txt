@@ -1,0 +1,323 @@
+
+=== MERGE DIAGNOSTICS ===
+Total rows: 128
+_merge
+left_only     64
+right_only    64
+both           0
+
+Unmatched comparisons:
+experiment dimension benchmark            algorithm_a            algorithm_b     _merge
+       059        10 Rastrigin        Low_Inertia_PSO          Random_Search  left_only
+       059        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       059        10 Rastrigin        Low_Inertia_PSO           Standard_PSO  left_only
+       059        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO  left_only
+       059        10 Rastrigin          Random_Search           Standard_PSO  left_only
+       059        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       059        10    Sphere        Low_Inertia_PSO          Random_Search  left_only
+       059        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       059        10    Sphere        Low_Inertia_PSO           Standard_PSO  left_only
+       059        10    Sphere          Random_Search Scheduled_Adaptive_PSO  left_only
+       059        10    Sphere          Random_Search           Standard_PSO  left_only
+       059        10    Sphere Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       059        30 Rastrigin        Low_Inertia_PSO          Random_Search  left_only
+       059        30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       059        30 Rastrigin        Low_Inertia_PSO           Standard_PSO  left_only
+       059        30 Rastrigin          Random_Search Scheduled_Adaptive_PSO  left_only
+       059        30 Rastrigin          Random_Search           Standard_PSO  left_only
+       059        30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       059        30    Sphere        Low_Inertia_PSO          Random_Search  left_only
+       059        30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       059        30    Sphere        Low_Inertia_PSO           Standard_PSO  left_only
+       059        30    Sphere          Random_Search Scheduled_Adaptive_PSO  left_only
+       059        30    Sphere          Random_Search           Standard_PSO  left_only
+       059        30    Sphere Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       060        10 Rastrigin  Feedback_Adaptive_PSO        Low_Inertia_PSO  left_only
+       060        10 Rastrigin  Feedback_Adaptive_PSO          Random_Search  left_only
+       060        10 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO  left_only
+       060        10 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO  left_only
+       060        10 Rastrigin        Low_Inertia_PSO          Random_Search  left_only
+       060        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       060        10 Rastrigin        Low_Inertia_PSO           Standard_PSO  left_only
+       060        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO  left_only
+       060        10 Rastrigin          Random_Search           Standard_PSO  left_only
+       060        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       060        10    Sphere  Feedback_Adaptive_PSO        Low_Inertia_PSO  left_only
+       060        10    Sphere  Feedback_Adaptive_PSO          Random_Search  left_only
+       060        10    Sphere  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO  left_only
+       060        10    Sphere  Feedback_Adaptive_PSO           Standard_PSO  left_only
+       060        10    Sphere        Low_Inertia_PSO          Random_Search  left_only
+       060        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       060        10    Sphere        Low_Inertia_PSO           Standard_PSO  left_only
+       060        10    Sphere          Random_Search Scheduled_Adaptive_PSO  left_only
+       060        10    Sphere          Random_Search           Standard_PSO  left_only
+       060        10    Sphere Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       060        30 Rastrigin  Feedback_Adaptive_PSO        Low_Inertia_PSO  left_only
+       060        30 Rastrigin  Feedback_Adaptive_PSO          Random_Search  left_only
+       060        30 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO  left_only
+       060        30 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO  left_only
+       060        30 Rastrigin        Low_Inertia_PSO          Random_Search  left_only
+       060        30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       060        30 Rastrigin        Low_Inertia_PSO           Standard_PSO  left_only
+       060        30 Rastrigin          Random_Search Scheduled_Adaptive_PSO  left_only
+       060        30 Rastrigin          Random_Search           Standard_PSO  left_only
+       060        30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  left_only
+       060        30    Sphere  Feedback_Adaptive_PSO        Low_Inertia_PSO  left_only
+       060        30    Sphere  Feedback_Adaptive_PSO          Random_Search  left_only
+       060        30    Sphere  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO  left_only
+       060        30    Sphere  Feedback_Adaptive_PSO           Standard_PSO  left_only
+       060        30    Sphere        Low_Inertia_PSO          Random_Search  left_only
+       060        30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO  left_only
+       060        30    Sphere        Low_Inertia_PSO           Standard_PSO  left_only
+       060        30    Sphere          Random_Search Scheduled_Adaptive_PSO  left_only
+       060        30    Sphere          Random_Search           Standard_PSO  left_only
+       060        30    Sphere Scheduled_Adaptive_PSO           Standard_PSO  left_only
+        59        10 Rastrigin        Low_Inertia_PSO          Random_Search right_only
+        59        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        59        10 Rastrigin        Low_Inertia_PSO           Standard_PSO right_only
+        59        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO right_only
+        59        10 Rastrigin          Random_Search           Standard_PSO right_only
+        59        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO right_only
+        59        10    Sphere        Low_Inertia_PSO          Random_Search right_only
+        59        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        59        10    Sphere        Low_Inertia_PSO           Standard_PSO right_only
+        59        10    Sphere          Random_Search Scheduled_Adaptive_PSO right_only
+        59        10    Sphere          Random_Search           Standard_PSO right_only
+        59        10    Sphere Scheduled_Adaptive_PSO           Standard_PSO right_only
+        59        30 Rastrigin        Low_Inertia_PSO          Random_Search right_only
+        59        30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        59        30 Rastrigin        Low_Inertia_PSO           Standard_PSO right_only
+        59        30 Rastrigin          Random_Search Scheduled_Adaptive_PSO right_only
+        59        30 Rastrigin          Random_Search           Standard_PSO right_only
+        59        30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO right_only
+        59        30    Sphere        Low_Inertia_PSO          Random_Search right_only
+        59        30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        59        30    Sphere        Low_Inertia_PSO           Standard_PSO right_only
+        59        30    Sphere          Random_Search Scheduled_Adaptive_PSO right_only
+        59        30    Sphere          Random_Search           Standard_PSO right_only
+        59        30    Sphere Scheduled_Adaptive_PSO           Standard_PSO right_only
+        60        10 Rastrigin  Feedback_Adaptive_PSO        Low_Inertia_PSO right_only
+        60        10 Rastrigin  Feedback_Adaptive_PSO          Random_Search right_only
+        60        10 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO right_only
+        60        10 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO right_only
+        60        10 Rastrigin        Low_Inertia_PSO          Random_Search right_only
+        60        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        60        10 Rastrigin        Low_Inertia_PSO           Standard_PSO right_only
+        60        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO right_only
+        60        10 Rastrigin          Random_Search           Standard_PSO right_only
+        60        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO right_only
+        60        10    Sphere  Feedback_Adaptive_PSO        Low_Inertia_PSO right_only
+        60        10    Sphere  Feedback_Adaptive_PSO          Random_Search right_only
+        60        10    Sphere  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO right_only
+        60        10    Sphere  Feedback_Adaptive_PSO           Standard_PSO right_only
+        60        10    Sphere        Low_Inertia_PSO          Random_Search right_only
+        60        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        60        10    Sphere        Low_Inertia_PSO           Standard_PSO right_only
+        60        10    Sphere          Random_Search Scheduled_Adaptive_PSO right_only
+        60        10    Sphere          Random_Search           Standard_PSO right_only
+        60        10    Sphere Scheduled_Adaptive_PSO           Standard_PSO right_only
+        60        30 Rastrigin  Feedback_Adaptive_PSO        Low_Inertia_PSO right_only
+        60        30 Rastrigin  Feedback_Adaptive_PSO          Random_Search right_only
+        60        30 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO right_only
+        60        30 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO right_only
+        60        30 Rastrigin        Low_Inertia_PSO          Random_Search right_only
+        60        30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        60        30 Rastrigin        Low_Inertia_PSO           Standard_PSO right_only
+        60        30 Rastrigin          Random_Search Scheduled_Adaptive_PSO right_only
+        60        30 Rastrigin          Random_Search           Standard_PSO right_only
+        60        30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO right_only
+        60        30    Sphere  Feedback_Adaptive_PSO        Low_Inertia_PSO right_only
+        60        30    Sphere  Feedback_Adaptive_PSO          Random_Search right_only
+        60        30    Sphere  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO right_only
+        60        30    Sphere  Feedback_Adaptive_PSO           Standard_PSO right_only
+        60        30    Sphere        Low_Inertia_PSO          Random_Search right_only
+        60        30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO right_only
+        60        30    Sphere        Low_Inertia_PSO           Standard_PSO right_only
+        60        30    Sphere          Random_Search Scheduled_Adaptive_PSO right_only
+        60        30    Sphere          Random_Search           Standard_PSO right_only
+        60        30    Sphere Scheduled_Adaptive_PSO           Standard_PSO right_only
+
+============================================================
+OSE EXPERIMENT 064 — FINAL REPORT
+============================================================
+
+OVERALL STATUS: FAIL
+Recomputed comparisons: 64
+Missing files: 0
+
+=== AUDIT STATUS COUNTS ===
+status
+FAIL      128
+PASS       15
+REVIEW      1
+
+=== AUDIT CHECKS ===
+experiment                         check status                                                                             details
+       059          raw_file_and_columns   PASS 1600 rows; SHA-256=af53c23fb888080f4e72d9d67cb1ee4dabaeecf0c17ec376f8b0229ebc9287cb
+       060          raw_file_and_columns   PASS 2000 rows; SHA-256=4515409aaeb4a2cd24d35b3983fcc790f8d65eb01e040d2a229238a52832ff2a
+       063         prior_comparison_file   PASS                                                          Loaded 64 comparison rows.
+       059               unique_run_keys   PASS                                                               Duplicate run keys: 0
+       059                 finite_scores   PASS                                                             All scores finite: True
+       060               unique_run_keys   PASS                                                               Duplicate run keys: 0
+       060                 finite_scores   PASS                                                             All scores finite: True
+       059 paired_seed_sets_10_Rastrigin   PASS                                              Same seed sets across algorithms: True
+       059    paired_seed_sets_10_Sphere   PASS                                              Same seed sets across algorithms: True
+       059 paired_seed_sets_30_Rastrigin   PASS                                              Same seed sets across algorithms: True
+       059    paired_seed_sets_30_Sphere   PASS                                              Same seed sets across algorithms: True
+       060 paired_seed_sets_10_Rastrigin   PASS                                              Same seed sets across algorithms: True
+       060    paired_seed_sets_10_Sphere   PASS                                              Same seed sets across algorithms: True
+       060 paired_seed_sets_30_Rastrigin   PASS                                              Same seed sets across algorithms: True
+       060    paired_seed_sets_30_Sphere   PASS                                              Same seed sets across algorithms: True
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       059         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 10D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                    Rastrigin 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+       060         raw_metrics_vs_exp063   FAIL                       Sphere 30D; mean_match=False; ci_match=False; merge=left_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        59         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 10D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                   Rastrigin 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+        60         raw_metrics_vs_exp063   FAIL                      Sphere 30D; mean_match=False; ci_match=False; merge=right_only
+   059+060              comparison_merge REVIEW                                                            Matched=0; unmatched=128
+
+=== RECOMPUTED COMPARISONS PREVIEW ===
+experiment dimension benchmark            algorithm_a            algorithm_b  n_pairs  mean_score_a  mean_score_b  mean_difference_a_minus_b  median_difference_a_minus_b  p_two_sided    p_b_lower  paired_bootstrap_ci_low  paired_bootstrap_ci_high  bootstrap_seed  bootstrap_resamples  p_holm_two_sided
+       059        10 Rastrigin        Low_Inertia_PSO          Random_Search      100     21.961669     86.519809                 -64.558140                   -66.092845 3.896560e-18 1.000000e+00               -67.330434                -61.803559      1936101306                10000      9.351744e-17
+       059        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO      100     21.961669     29.903851                  -7.942183                    -6.820874 1.851826e-06 9.999991e-01               -10.753185                 -5.186103      3816916269                10000      1.296278e-05
+       059        10 Rastrigin        Low_Inertia_PSO           Standard_PSO      100     21.961669     39.210650                 -17.248982                   -17.010384 4.915089e-15 1.000000e+00               -20.172044                -14.401517       993749868                10000      4.423580e-14
+       059        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO      100     86.519809     29.903851                  56.615957                    57.443889 3.896560e-18 1.948280e-18                53.794285                 59.500417       560353096                10000      9.351744e-17
+       059        10 Rastrigin          Random_Search           Standard_PSO      100     86.519809     39.210650                  47.309158                    48.508126 3.896560e-18 1.948280e-18                44.259354                 50.371984      3884290153                10000      9.351744e-17
+       059        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO      100     29.903851     39.210650                  -9.306799                   -11.236332 1.982469e-06 9.999990e-01               -12.761490                 -5.892484       636711104                10000      1.296278e-05
+       059        10    Sphere        Low_Inertia_PSO          Random_Search      100      0.069368     19.740439                 -19.671071                   -20.256696 3.896560e-18 1.000000e+00               -20.543408                -18.790640      3850696977                10000      9.351744e-17
+       059        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO      100      0.069368      0.014281                   0.055087                     0.007686 3.476950e-05 1.738475e-05                 0.029104                  0.088797       877842665                10000      1.043085e-04
+       059        10    Sphere        Low_Inertia_PSO           Standard_PSO      100      0.069368      0.099062                  -0.029695                    -0.044572 2.531779e-05 9.999873e-01                -0.061182                  0.007427       557674484                10000      1.012712e-04
+       059        10    Sphere          Random_Search Scheduled_Adaptive_PSO      100     19.740439      0.014281                  19.726158                    20.270744 3.896560e-18 1.948280e-18                18.854615                 20.581315      2701873358                10000      9.351744e-17
+
+=== SAVED FILES ===
+/content/OSE/results/experiment_064_recomputed_metrics.csv
+/content/OSE/results/experiment_064_audit_checks.csv
+/content/OSE/results/experiment_064_research_record.json
+/content/OSE/results/experiment_064_research_record.md
+/content/OSE/results/experiment_064_merge_diagnostic.csv
+
+Runtime: 12.19 seconds
+
+Experiment 064 completed.

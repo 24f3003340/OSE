@@ -1,0 +1,7 @@
+Matched comparisons: 64
+
+Holm correction scope diagnostic
+experiment_only: 64/64 matches; max difference=5.99997e-16; mean difference=4.96426e-17
+experiment_dimension: 44/64 matches; max difference=0.450339; mean difference=0.0184524
+experiment_dimension_benchmark: 44/64 matches; max difference=0.525497; mean difference=0.03232
+all_comparisons: 47/64 matches; max difference=0.0850187; mean difference=0.0033221

@@ -1,0 +1,64 @@
+
+=== EXPERIMENT 061 AUDIT ===
+experiment status  rows  checks_passed  checks_failed                                                                                                                                                                                                                   notes
+       059   PASS  1600              8              0 {"nonempty": true, "finite_scores": true, "finite_runtime": true, "nonnegative_runtime": true, "positive_evaluations": true, "unique_run_keys": true, "success_matches_target": true, "evaluations_match_budget": true}
+       060   PASS  2000              8              0 {"nonempty": true, "finite_scores": true, "finite_runtime": true, "nonnegative_runtime": true, "positive_evaluations": true, "unique_run_keys": true, "success_matches_target": true, "evaluations_match_budget": true}
+
+=== PAIRED-SEED CHECKS ===
+experiment  dimension benchmark  algorithms  same_seed_sets                                                                                                                      seed_counts
+       059         10 Rastrigin           4            True                               {"Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       059         10    Sphere           4            True                               {"Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       059         30 Rastrigin           4            True                               {"Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       059         30    Sphere           4            True                               {"Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       060         10 Rastrigin           5            True {"Feedback_Adaptive_PSO": 100, "Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       060         10    Sphere           5            True {"Feedback_Adaptive_PSO": 100, "Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       060         30 Rastrigin           5            True {"Feedback_Adaptive_PSO": 100, "Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+       060         30    Sphere           5            True {"Feedback_Adaptive_PSO": 100, "Low_Inertia_PSO": 100, "Random_Search": 100, "Scheduled_Adaptive_PSO": 100, "Standard_PSO": 100}
+
+=== RECALCULATED SUMMARY ===
+ dimension benchmark              algorithm  runs  recalculated_mean  recalculated_median  recalculated_std  recalculated_successes  recalculated_runtime  unique_seeds experiment
+        10 Rastrigin        Low_Inertia_PSO   100          21.961669            19.080303         10.319912                       0              0.015589           100        059
+        10 Rastrigin          Random_Search   100          86.519809            87.480349          9.478781                       0              0.019736           100        059
+        10 Rastrigin Scheduled_Adaptive_PSO   100          29.903851            28.909076         12.437271                       0              0.015169           100        059
+        10 Rastrigin           Standard_PSO   100          39.210650            39.052601         12.830338                       0              0.015278           100        059
+        10    Sphere        Low_Inertia_PSO   100           0.069368             0.018765          0.153805                       4              0.008637           100        059
+        10    Sphere          Random_Search   100          19.740439            20.289103          4.496197                       0              0.010922           100        059
+        10    Sphere Scheduled_Adaptive_PSO   100           0.014281             0.010727          0.013826                       0              0.008077           100        059
+        10    Sphere           Standard_PSO   100           0.099062             0.074784          0.080235                       0              0.007830           100        059
+        30 Rastrigin        Low_Inertia_PSO   100         156.198155           155.961824         29.741733                       0              0.014233           100        059
+        30 Rastrigin          Random_Search   100         380.998702           382.151654         19.484084                       0              0.016291           100        059
+        30 Rastrigin Scheduled_Adaptive_PSO   100         237.059207           233.142006         36.014774                       0              0.013928           100        059
+        30 Rastrigin           Standard_PSO   100         277.249188           278.937480         39.585293                       0              0.013734           100        059
+        30    Sphere        Low_Inertia_PSO   100          25.422396            22.709701         10.809376                       0              0.009222           100        059
+        30    Sphere          Random_Search   100         134.574312           136.112411         13.179140                       0              0.010494           100        059
+        30    Sphere Scheduled_Adaptive_PSO   100          18.903453            15.513435         11.300430                       0              0.008387           100        059
+        30    Sphere           Standard_PSO   100          21.510570            18.441009         10.902670                       0              0.008580           100        059
+        10 Rastrigin  Feedback_Adaptive_PSO   100          24.988720            23.074657         12.125483                       0              0.015818           100        060
+        10 Rastrigin        Low_Inertia_PSO   100          23.233180            22.618545          8.597476                       0              0.015990           100        060
+        10 Rastrigin          Random_Search   100          84.943860            85.223852          9.051490                       0              0.018440           100        060
+        10 Rastrigin Scheduled_Adaptive_PSO   100          32.185118            30.598195         13.019460                       0              0.015517           100        060
+        10 Rastrigin           Standard_PSO   100          42.722166            40.242290         13.449094                       0              0.015399           100        060
+        10    Sphere  Feedback_Adaptive_PSO   100           0.020421             0.003957          0.037629                       9              0.008607           100        060
+        10    Sphere        Low_Inertia_PSO   100           0.099729             0.011461          0.303575                      10              0.008550           100        060
+        10    Sphere          Random_Search   100          19.902617            20.306653          4.370755                       0              0.010763           100        060
+        10    Sphere Scheduled_Adaptive_PSO   100           0.015039             0.008784          0.020475                       0              0.008132           100        060
+        10    Sphere           Standard_PSO   100           0.090791             0.070083          0.066696                       0              0.007810           100        060
+        30 Rastrigin  Feedback_Adaptive_PSO   100         183.459534           182.346318         31.762899                       0              0.016993           100        060
+        30 Rastrigin        Low_Inertia_PSO   100         159.492734           156.289394         27.040639                       0              0.017303           100        060
+        30 Rastrigin          Random_Search   100         380.115410           381.878230         16.972427                       0              0.019224           100        060
+        30 Rastrigin Scheduled_Adaptive_PSO   100         242.618530           243.835480         30.196751                       0              0.016666           100        060
+        30 Rastrigin           Standard_PSO   100         287.643234           289.742095         37.529544                       0              0.016679           100        060
+        30    Sphere  Feedback_Adaptive_PSO   100          22.150147            19.528743         10.313526                       0              0.008674           100        060
+        30    Sphere        Low_Inertia_PSO   100          25.771220            24.788610          9.983028                       0              0.008921           100        060
+        30    Sphere          Random_Search   100         136.506863           137.739519         11.009295                       0              0.009836           100        060
+        30    Sphere Scheduled_Adaptive_PSO   100          19.927563            18.320144         11.350569                       0              0.008161           100        060
+        30    Sphere           Standard_PSO   100          21.886689            18.774256         11.040435                       0              0.008092           100        060
+
+=== SAVED FILES ===
+/content/OSE/results/experiment_061_audit.csv
+/content/OSE/results/experiment_061_recalculated_summary.csv
+/content/OSE/results/experiment_061_pairing_checks.csv
+/content/OSE/results/experiment_061_research_record.json
+/content/OSE/results/experiment_061_research_record.md
+
+Experiment 061 audit complete.

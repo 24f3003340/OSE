@@ -1,0 +1,42 @@
+====================================================================
+OSE EXPERIMENT 064 — BOOTSTRAP AUDIT
+====================================================================
+
+Matched comparisons: 64
+
+Lower-bound absolute difference:
+  Mean: 0.044056
+  Max:  0.296034
+
+Upper-bound absolute difference:
+  Mean: 0.052970
+  Max:  0.254656
+
+Interval width difference:
+  Mean absolute difference: 0.064463
+  Max absolute difference:  0.273754
+
+Interval overlap:
+  64/64 pairs have overlapping intervals
+
+Zero-inclusion decision:
+  64/64 pairs agree on whether the interval includes zero
+
+Examples with largest lower-bound differences:
+experiment  dimension benchmark            algorithm_a            algorithm_b  ci_low_old  ci_low_new  ci_high_old  ci_high_new  intervals_overlap  zero_decision_matches
+       060         30 Rastrigin          Random_Search           Standard_PSO   84.909970   84.613936   100.453247   100.233123               True                   True
+       059         30 Rastrigin          Random_Search           Standard_PSO   95.205566   95.452343   112.244457   112.253366               True                   True
+       059         30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO  -89.309389  -89.517447   -72.517494   -72.772150               True                   True
+       060         30 Rastrigin        Low_Inertia_PSO          Random_Search -226.750454 -226.924012  -214.292765  -214.436416               True                   True
+       059         30 Rastrigin          Random_Search Scheduled_Adaptive_PSO  135.428105  135.576674   152.317000   152.227195               True                   True
+       059         10 Rastrigin        Low_Inertia_PSO           Standard_PSO  -20.241411  -20.105321   -14.369323   -14.327537               True                   True
+       059         10 Rastrigin          Random_Search Scheduled_Adaptive_PSO   53.757274   53.647923    59.551575    59.481929               True                   True
+       060         30    Sphere        Low_Inertia_PSO          Random_Search -113.845752 -113.740507  -107.534312  -107.589483               True                   True
+       060         10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  -14.159458  -14.058935    -7.007088    -6.937032               True                   True
+       060         30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO  -53.119803  -53.207805   -37.014802   -37.066168               True                   True
+
+Saved diagnostic:
+/content/OSE/results/experiment_064_bootstrap_diagnostic.csv
+
+Interpretation:
+Different intervals can arise from different bootstrap seeds or resampling settings. Overlap alone does not prove the methods are identical. Exact reproduction requires the original Experiment 063 bootstrap implementation and seed-generation rule.

@@ -1,0 +1,33 @@
+Total cells: 201
+Cell 175 | source chars: 13269 | output chars: 15472
+Source preview:  # ============================================================ # OSE EXPERIMENT 059 # Independent Validation Across Dimensions # 10D + 30D | Sphere + Rastrigin # RS vs Standard PS
+Output preview: 10D Sphere: 10/100 seeds; 40/1600 runs complete 10D Sphere: 20/100 seeds; 80/1600 runs complete 10D Sphere: 30/100 seeds; 120/1600 runs complete 10D Sphere: 40/100 seeds; 160/1600 
+--------------------------------------------------
+Cell 177 | source chars: 11334 | output chars: 10653
+Source preview:  import json import time import warnings from pathlib import Path  import numpy as np import pandas as pd from scipy.stats import wilcoxon  warnings.filterwarnings("ignore")  ROOT 
+Output preview: 10D Sphere: 10/100 seeds; 50/2000 runs complete 10D Sphere: 20/100 seeds; 100/2000 runs complete 10D Sphere: 30/100 seeds; 150/2000 runs complete 10D Sphere: 40/100 seeds; 200/2000
+--------------------------------------------------
+Cell 185 | source chars: 17814 | output chars: 34655
+Source preview:  # ============================================================ # OPEN SCIENCE ENGINE (OSE) # EXPERIMENT 064 # Statistical Consistency & Reproducibility Audit # ===================
+Output preview:  === MERGE DIAGNOSTICS === Total rows: 128 _merge left_only     64 right_only    64 both           0  Unmatched comparisons: experiment dimension benchmark            algorithm_a  
+--------------------------------------------------
+Cell 190 | source chars: 24938 | output chars: 3285
+Source preview:  # ================================================================ # OPEN SCIENCE ENGINE (OSE) — EXPERIMENT 064 # Statistical Consistency & Reproducibility Audit # # Inputs: #   r
+Output preview: ======================================================================== OSE EXPERIMENT 064 — COMPLETED ========================================================================  Ra
+--------------------------------------------------
+Cell 194 | source chars: 11335 | output chars: 5987
+Source preview:  import os import json import numpy as np import pandas as pd from datetime import datetime, timezone  os.chdir("/content/OSE") RESULTS_DIR = "results" os.makedirs(RESULTS_DIR, exi
+Output preview: Raw data loaded: 3600 rows Columns: ['experiment', 'dimension', 'benchmark', 'algorithm', 'seed', 'budget', 'evaluations', 'best_score', 'target', 'success', 'runtime_seconds', 'so
+--------------------------------------------------
+Cell 197 | source chars: 659 | output chars: 251
+Source preview:  import os import zipfile  source = "/content/OSE/results" output = "/content/ose_dashboard_results.zip"  files = [     "experiment_065_benchmark_leaderboard.csv",     "experiment_
+Output preview: Added: experiment_065_benchmark_leaderboard.csv Added: experiment_065_statistical_evidence.csv Added: experiment_066_dashboard_data.json Added: experiment_059_results.csv Added: ex
+--------------------------------------------------
+Cell 198 | source chars: 723 | output chars: 8233
+Source preview: import json from pathlib import Path from google.colab import drive  drive.mount("/content/drive")  notebook_path = Path(     "/content/drive/MyDrive/Colab Notebooks/"     "OSE_Day
+Output preview: Mounted at /content/drive  ============================================================ CELL: 194 OUTPUTS: Raw data loaded: 3600 rows Columns: ['experiment', 'dimension', 'benchmar
+--------------------------------------------------
+Cell 200 | source chars: 582 | output chars: 48
+Source preview: from pathlib import Path  root = Path("/content/drive/MyDrive")  targets = {     "experiment_059_results.csv",     "experiment_060_results.csv",     "experiment_065_benchmark_leade
+Output preview: No matching result files found in Google Drive. 
+--------------------------------------------------

@@ -1,0 +1,48 @@
+========================================================================
+OSE EXPERIMENT 064 — COMPLETED
+========================================================================
+
+Raw input rows:
+  Experiment 059: 1600
+  Experiment 060: 2000
+
+Pairwise comparisons recomputed: 64
+
+Bootstrap direction counts:
+A_LOWER_SCORE             33
+A_HIGHER_SCORE            23
+INTERVAL_INCLUDES_ZERO     8
+
+Audit checks:
+                                         check status                                                                  details
+                        Raw input files loaded   PASS                       Experiment 059 rows=1600; Experiment 060 rows=2000
+         Required standardized columns present   PASS                 experiment, dimension, benchmark, algorithm, seed, score
+                   All objective scores finite   PASS                                                      Non-finite scores=0
+          No duplicate algorithm-seed run keys   PASS Each experiment/dimension/benchmark/algorithm/seed key should be unique.
+                Pairwise comparisons generated   PASS                                                     Total comparisons=64
+All comparisons have at least two paired seeds   PASS                                                 Minimum paired seeds=100
+         All finite p-values are within [0, 1]   PASS                         Checks raw and Holm-adjusted two-sided p-values.
+              Confidence intervals are ordered   PASS                                 Lower bound must not exceed upper bound.
+         Experiment 063 comparison keys unique   PASS                                       Duplicate keys in Experiment 063=0
+         Experiment 064 comparison keys unique   PASS                                   Duplicate keys in recomputed results=0
+  Experiment 063 and 064 comparison keys align   PASS                            {'both': 64, 'left_only': 0, 'right_only': 0}
+
+Comparison against Experiment 063:
+         metric  valid_comparisons  exact_matches  max_absolute_difference  mean_absolute_difference status
+mean_difference                 64             64             2.842171e-14              1.540597e-15   PASS
+         ci_low                 64              0             2.960338e-01              4.405623e-02 REVIEW
+        ci_high                 64              0             2.546565e-01              5.297030e-02 REVIEW
+    p_two_sided                 64             64             8.673617e-17              7.706413e-18   PASS
+         p_holm                 64             64             8.691236e-17              8.298858e-18   PASS
+
+Files saved:
+ - /content/OSE/results/experiment_064_recomputed_metrics.csv
+ - /content/OSE/results/experiment_064_audit_checks.csv
+ - /content/OSE/results/experiment_064_research_record.json
+ - /content/OSE/results/experiment_064_research_record.md
+ - /content/OSE/results/experiment_064_merge_diagnostic.csv
+ - /content/OSE/results/experiment_064_metric_difference_report.csv
+
+Important:
+This version uses its own deterministic bootstrap seed scheme. CI bounds may differ slightly from Experiment 063 even when paired means and Wilcoxon p-values match.
+A PASS indicates the specified audit checks passed; it does not establish universal superiority of any optimizer.

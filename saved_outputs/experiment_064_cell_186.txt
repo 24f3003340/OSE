@@ -1,0 +1,17 @@
+Duplicate keys in recomputed: 0
+Duplicate keys in prior: 0
+
+=== NORMALIZED MERGE RESULT ===
+Total rows: 64
+_merge
+both          64
+left_only      0
+right_only     0
+Name: count, dtype: int64
+
+Unmatched records:
+Empty DataFrame
+Columns: [experiment, dimension, benchmark, algorithm_a, algorithm_b, _merge]
+Index: []
+
+Saved: /content/OSE/results/experiment_064_merge_diagnostic_fixed.csv

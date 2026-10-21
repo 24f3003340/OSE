@@ -1,0 +1,80 @@
+
+=== EXPERIMENT 062: AUDIT CHECKS ===
+experiment            check status                    details
+       059 required_columns   PASS All required columns exist
+       060 required_columns   PASS All required columns exist
+
+=== COMPARISON COUNT ===
+Total comparisons: 64
+experiment
+059    24
+060    40
+dtype: int64
+
+=== SIGNIFICANT AFTER HOLM CORRECTION ===
+experiment  dimension benchmark            algorithm_a            algorithm_b  mean_improvement_a_minus_b  p_two_sided  p_holm_two_sided  significant_holm_005
+       059         10 Rastrigin        Low_Inertia_PSO          Random_Search                  -64.558140 3.896560e-18      9.351744e-17                  True
+       059         10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO                   -7.942183 1.851826e-06      1.296278e-05                  True
+       059         10 Rastrigin        Low_Inertia_PSO           Standard_PSO                  -17.248982 4.915089e-15      4.423580e-14                  True
+       059         10 Rastrigin          Random_Search Scheduled_Adaptive_PSO                   56.615957 3.896560e-18      9.351744e-17                  True
+       059         10 Rastrigin          Random_Search           Standard_PSO                   47.309158 3.896560e-18      9.351744e-17                  True
+       059         10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO                   -9.306799 1.982469e-06      1.296278e-05                  True
+       059         10    Sphere        Low_Inertia_PSO          Random_Search                  -19.671071 3.896560e-18      9.351744e-17                  True
+       059         10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO                    0.055087 3.476950e-05      1.043085e-04                  True
+       059         10    Sphere        Low_Inertia_PSO           Standard_PSO                   -0.029695 2.531779e-05      1.012712e-04                  True
+       059         10    Sphere          Random_Search Scheduled_Adaptive_PSO                   19.726158 3.896560e-18      9.351744e-17                  True
+       059         10    Sphere          Random_Search           Standard_PSO                   19.641377 3.896560e-18      9.351744e-17                  True
+       059         10    Sphere Scheduled_Adaptive_PSO           Standard_PSO                   -0.084782 6.124727e-18      9.351744e-17                  True
+       059         30 Rastrigin        Low_Inertia_PSO          Random_Search                 -224.800547 3.896560e-18      9.351744e-17                  True
+       059         30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO                  -80.861052 4.266323e-18      9.351744e-17                  True
+       059         30 Rastrigin        Low_Inertia_PSO           Standard_PSO                 -121.051034 3.896560e-18      9.351744e-17                  True
+       059         30 Rastrigin          Random_Search Scheduled_Adaptive_PSO                  143.939495 3.896560e-18      9.351744e-17                  True
+       059         30 Rastrigin          Random_Search           Standard_PSO                  103.749513 4.016156e-18      9.351744e-17                  True
+       059         30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO                  -40.189982 1.807711e-12      1.446169e-11                  True
+       059         30    Sphere        Low_Inertia_PSO          Random_Search                 -109.151916 3.896560e-18      9.351744e-17                  True
+       059         30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO                    6.518943 9.188483e-06      4.594241e-05                  True
+       059         30    Sphere        Low_Inertia_PSO           Standard_PSO                    3.911826 1.938409e-02      3.128580e-02                  True
+       059         30    Sphere          Random_Search Scheduled_Adaptive_PSO                  115.670858 3.896560e-18      9.351744e-17                  True
+       059         30    Sphere          Random_Search           Standard_PSO                  113.063742 3.896560e-18      9.351744e-17                  True
+       059         30    Sphere Scheduled_Adaptive_PSO           Standard_PSO                   -2.607117 1.564290e-02      3.128580e-02                  True
+       060         10 Rastrigin  Feedback_Adaptive_PSO          Random_Search                  -59.955139 3.896560e-18      1.558624e-16                  True
+       060         10 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO                   -7.196397 1.036568e-04      1.036568e-03                  True
+       060         10 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO                  -17.733446 3.736988e-15      6.726578e-14                  True
+       060         10 Rastrigin        Low_Inertia_PSO          Random_Search                  -61.710680 3.896560e-18      1.558624e-16                  True
+       060         10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO                   -8.951938 6.862603e-08      9.607644e-07                  True
+       060         10 Rastrigin        Low_Inertia_PSO           Standard_PSO                  -19.488986 5.947968e-16      1.189594e-14                  True
+       060         10 Rastrigin          Random_Search Scheduled_Adaptive_PSO                   52.758742 3.896560e-18      1.558624e-16                  True
+       060         10 Rastrigin          Random_Search           Standard_PSO                   42.221694 4.016156e-18      1.558624e-16                  True
+       060         10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO                  -10.537048 2.743065e-07      3.565985e-06                  True
+       060         10    Sphere  Feedback_Adaptive_PSO          Random_Search                  -19.882197 3.896560e-18      1.558624e-16                  True
+       060         10    Sphere  Feedback_Adaptive_PSO           Standard_PSO                   -0.070370 2.606273e-13      4.170037e-12                  True
+       060         10    Sphere        Low_Inertia_PSO          Random_Search                  -19.802888 3.896560e-18      1.558624e-16                  True
+       060         10    Sphere        Low_Inertia_PSO           Standard_PSO                    0.008939 7.580603e-06      9.096723e-05                  True
+       060         10    Sphere          Random_Search Scheduled_Adaptive_PSO                   19.887578 3.896560e-18      1.558624e-16                  True
+       060         10    Sphere          Random_Search           Standard_PSO                   19.811827 3.896560e-18      1.558624e-16                  True
+       060         10    Sphere Scheduled_Adaptive_PSO           Standard_PSO                   -0.075751 6.473312e-16      1.229929e-14                  True
+       060         30 Rastrigin  Feedback_Adaptive_PSO        Low_Inertia_PSO                   23.966800 1.498043e-09      2.247064e-08                  True
+       060         30 Rastrigin  Feedback_Adaptive_PSO          Random_Search                 -196.655875 3.896560e-18      1.558624e-16                  True
+       060         30 Rastrigin  Feedback_Adaptive_PSO Scheduled_Adaptive_PSO                  -59.158996 8.491130e-17      1.783137e-15                  True
+       060         30 Rastrigin  Feedback_Adaptive_PSO           Standard_PSO                 -104.183700 4.139374e-18      1.558624e-16                  True
+       060         30 Rastrigin        Low_Inertia_PSO          Random_Search                 -220.622676 3.896560e-18      1.558624e-16                  True
+       060         30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO                  -83.125796 4.139374e-18      1.558624e-16                  True
+       060         30 Rastrigin        Low_Inertia_PSO           Standard_PSO                 -128.150500 3.896560e-18      1.558624e-16                  True
+       060         30 Rastrigin          Random_Search Scheduled_Adaptive_PSO                  137.496880 3.896560e-18      1.558624e-16                  True
+       060         30 Rastrigin          Random_Search           Standard_PSO                   92.472176 3.896560e-18      1.558624e-16                  True
+       060         30 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO                  -45.024704 7.199382e-15      1.223895e-13                  True
+       060         30    Sphere  Feedback_Adaptive_PSO        Low_Inertia_PSO                   -3.621073 5.702528e-03      4.562022e-02                  True
+       060         30    Sphere  Feedback_Adaptive_PSO          Random_Search                 -114.356717 3.896560e-18      1.558624e-16                  True
+       060         30    Sphere        Low_Inertia_PSO          Random_Search                 -110.735644 3.896560e-18      1.558624e-16                  True
+       060         30    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO                    5.843657 4.613017e-05      5.074319e-04                  True
+       060         30    Sphere        Low_Inertia_PSO           Standard_PSO                    3.884531 4.709164e-04      4.238248e-03                  True
+       060         30    Sphere          Random_Search Scheduled_Adaptive_PSO                  116.579300 3.896560e-18      1.558624e-16                  True
+       060         30    Sphere          Random_Search           Standard_PSO                  114.620174 3.896560e-18      1.558624e-16                  True
+
+=== FILES SAVED ===
+/content/OSE/results/experiment_062_statistical_comparisons.csv
+/content/OSE/results/experiment_062_audit_checks.csv
+/content/OSE/results/experiment_062_research_record.json
+/content/OSE/results/experiment_062_research_record.md
+
+Experiment 062 complete.

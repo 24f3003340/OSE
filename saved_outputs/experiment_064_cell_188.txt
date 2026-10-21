@@ -1,0 +1,113 @@
+=== ALL MERGED COLUMN NAMES ===
+experiment
+dimension
+benchmark
+algorithm_a
+algorithm_b
+n_pairs_new
+mean_score_a_new
+mean_score_b_new
+mean_difference_a_minus_b_new
+median_difference_a_minus_b_new
+p_two_sided_new
+p_b_lower
+paired_bootstrap_ci_low_new
+paired_bootstrap_ci_high_new
+bootstrap_seed
+bootstrap_resamples
+p_holm_two_sided_new
+n_pairs_old
+mean_score_a_old
+mean_score_b_old
+mean_difference_a_minus_b_old
+median_difference_a_minus_b_old
+paired_bootstrap_ci_low_old
+paired_bootstrap_ci_high_old
+wilcoxon_statistic
+p_two_sided_old
+p_b_better_one_sided
+p_a_better_one_sided
+test_status
+status
+p_holm_two_sided_old
+significant_holm_005
+bootstrap_direction
+_merge
+
+=== CI / BOOTSTRAP RELATED COLUMNS ===
+['p_b_lower', 'paired_bootstrap_ci_low_new', 'paired_bootstrap_ci_high_new', 'bootstrap_seed', 'bootstrap_resamples', 'paired_bootstrap_ci_low_old', 'paired_bootstrap_ci_high_old', 'bootstrap_direction']
+
+=== FIRST 5 MATCHED RECORDS: CI VALUES ===
+
+
+  experiment dimension  benchmark      algorithm_a             algorithm_b  \
+0        059        10  Rastrigin  Low_Inertia_PSO           Random_Search   
+1        059        10  Rastrigin  Low_Inertia_PSO  Scheduled_Adaptive_PSO   
+2        059        10  Rastrigin  Low_Inertia_PSO            Standard_PSO   
+3        059        10  Rastrigin    Random_Search  Scheduled_Adaptive_PSO   
+4        059        10  Rastrigin    Random_Search            Standard_PSO   
+
+      p_b_lower  paired_bootstrap_ci_low_new  paired_bootstrap_ci_high_new  \
+0  1.000000e+00                   -67.330434                    -61.803559   
+1  9.999991e-01                   -10.753185                     -5.186103   
+2  1.000000e+00                   -20.172044                    -14.401517   
+3  1.948280e-18                    53.794285                     59.500417   
+4  1.948280e-18                    44.259354                     50.371984   
+
+   bootstrap_seed  bootstrap_resamples  paired_bootstrap_ci_low_old  \
+0      1936101306                10000                   -67.311737   
+1      3816916269                10000                   -10.695799   
+2       993749868                10000                   -20.241411   
+3       560353096                10000                    53.757274   
+4      3884290153                10000                    44.311482   
+
+   paired_bootstrap_ci_high_old bootstrap_direction  
+0                    -61.767303       A_LOWER_SCORE  
+1                     -5.180461       A_LOWER_SCORE  
+2                    -14.369323       A_LOWER_SCORE  
+3                     59.551575       B_LOWER_SCORE  
+4                     50.267730       B_LOWER_SCORE  
+
+[HTML output omitted from text export]
+
+
+=== EXPERIMENT 063 FILE SCHEMA ===
+Columns:
+['experiment', 'dimension', 'benchmark', 'algorithm_a', 'algorithm_b', 'n_pairs', 'mean_score_a', 'mean_score_b', 'mean_difference_a_minus_b', 'median_difference_a_minus_b', 'paired_bootstrap_ci_low', 'paired_bootstrap_ci_high', 'wilcoxon_statistic', 'p_two_sided', 'p_b_better_one_sided', 'p_a_better_one_sided', 'test_status', 'status', 'p_holm_two_sided', 'significant_holm_005', 'bootstrap_direction']
+
+First 3 rows:
+
+
+   experiment  dimension  benchmark      algorithm_a             algorithm_b  \
+0          59         10  Rastrigin  Low_Inertia_PSO           Random_Search   
+1          59         10  Rastrigin  Low_Inertia_PSO  Scheduled_Adaptive_PSO   
+2          59         10  Rastrigin  Low_Inertia_PSO            Standard_PSO   
+
+   n_pairs  mean_score_a  mean_score_b  mean_difference_a_minus_b  \
+0      100     21.961669     86.519809                 -64.558140   
+1      100     21.961669     29.903851                  -7.942183   
+2      100     21.961669     39.210650                 -17.248982   
+
+   median_difference_a_minus_b  ...  paired_bootstrap_ci_high  \
+0                   -66.092845  ...                -61.767303   
+1                    -6.820874  ...                 -5.180461   
+2                   -17.010384  ...                -14.369323   
+
+   wilcoxon_statistic   p_two_sided  p_b_better_one_sided  \
+0                 0.0  3.896560e-18              1.000000   
+1              1138.0  1.851826e-06              0.999999   
+2               248.0  4.915089e-15              1.000000   
+
+   p_a_better_one_sided  test_status      status p_holm_two_sided  \
+0          1.948280e-18   CALCULATED  CALCULATED     9.351744e-17   
+1          9.259129e-07   CALCULATED  CALCULATED     1.296278e-05   
+2          2.457544e-15   CALCULATED  CALCULATED     4.423580e-14   
+
+   significant_holm_005  bootstrap_direction  
+0                  True        A_LOWER_SCORE  
+1                  True        A_LOWER_SCORE  
+2                  True        A_LOWER_SCORE  
+
+[3 rows x 21 columns]
+
+[HTML output omitted from text export]

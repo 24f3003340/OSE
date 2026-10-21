@@ -1,0 +1,30 @@
+=== METRIC CONSISTENCY SUMMARY ===
+Total matched comparisons: 64
+
+Status counts:
+status
+REVIEW    64
+Name: count, dtype: int64
+
+Mean matches: 64
+CI matches: 0
+
+First 15 records:
+experiment dimension benchmark            algorithm_a            algorithm_b  mean_match  ci_match status
+       059        10 Rastrigin        Low_Inertia_PSO          Random_Search        True     False REVIEW
+       059        10 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO        True     False REVIEW
+       059        10 Rastrigin        Low_Inertia_PSO           Standard_PSO        True     False REVIEW
+       059        10 Rastrigin          Random_Search Scheduled_Adaptive_PSO        True     False REVIEW
+       059        10 Rastrigin          Random_Search           Standard_PSO        True     False REVIEW
+       059        10 Rastrigin Scheduled_Adaptive_PSO           Standard_PSO        True     False REVIEW
+       059        10    Sphere        Low_Inertia_PSO          Random_Search        True     False REVIEW
+       059        10    Sphere        Low_Inertia_PSO Scheduled_Adaptive_PSO        True     False REVIEW
+       059        10    Sphere        Low_Inertia_PSO           Standard_PSO        True     False REVIEW
+       059        10    Sphere          Random_Search Scheduled_Adaptive_PSO        True     False REVIEW
+       059        10    Sphere          Random_Search           Standard_PSO        True     False REVIEW
+       059        10    Sphere Scheduled_Adaptive_PSO           Standard_PSO        True     False REVIEW
+       059        30 Rastrigin        Low_Inertia_PSO          Random_Search        True     False REVIEW
+       059        30 Rastrigin        Low_Inertia_PSO Scheduled_Adaptive_PSO        True     False REVIEW
+       059        30 Rastrigin        Low_Inertia_PSO           Standard_PSO        True     False REVIEW
+
+Saved: /content/OSE/results/experiment_064_metric_consistency.csv

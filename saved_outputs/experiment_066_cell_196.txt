@@ -1,0 +1,31 @@
+========== EXPERIMENT 066 COMPLETE ==========
+Leaderboard rows: 36
+Groups: 8
+
+Validation checks:
+                              check status                                                detail
+Required columns and numeric fields   PASS               All required fields present and numeric
+         Finite leaderboard metrics   PASS          Mean, median and ranks contain finite values
+                Positive run counts   PASS                 Minimum runs per algorithm/group: 100
+           Standard deviation valid   PASS  Standard deviations are non-negative where available
+                Ranking consistency   PASS Saved ranks match ranks recalculated from mean scores
+
+Lowest mean score per group:
+ source_experiment benchmark  dimension  lowest_mean_algorithm  lowest_mean_score
+                59 Rastrigin         10        Low_Inertia_PSO          21.961669
+                59 Rastrigin         30        Low_Inertia_PSO         156.198155
+                59    Sphere         10 Scheduled_Adaptive_PSO           0.014281
+                59    Sphere         30 Scheduled_Adaptive_PSO          18.903453
+                60 Rastrigin         10        Low_Inertia_PSO          23.233180
+                60 Rastrigin         30        Low_Inertia_PSO         159.492734
+                60    Sphere         10 Scheduled_Adaptive_PSO           0.015039
+                60    Sphere         30 Scheduled_Adaptive_PSO          19.927563
+
+Files created:
+- results/experiment_066_best_mean_summary.csv
+- results/experiment_066_validation_checks.csv
+- results/experiment_066_dashboard_data.json
+- results/experiment_066_research_report.md
+- results/experiment_066_research_record.json
+
+All validation checks passed.

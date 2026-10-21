@@ -1,0 +1,78 @@
+
+=======================================================
+CELL 175: FILE OPERATIONS AND PATHS
+21: ROOT = Path("/content/OSE")
+190: df.to_csv(OUT / "experiment_059_results.csv", index=False)
+191: df.to_csv(OUT / "experiment_059_history.csv", index=False)
+216: summary.to_csv(OUT / "experiment_059_summary.csv", index=False)
+312: comp.to_csv(
+327: adaptive.to_csv(
+402: with open(OUT / "experiment_059_research_record.json", "w") as f:
+436: with open(OUT / "experiment_059_research_record.md", "w") as f:
+441: "experiment_059_results.csv",
+
+SAVED OUTPUT — LAST 25 LINES:
+        30 Rastrigin   Random_Search Scheduled_Adaptive_PSO           100        143.939495          144.262827 135.520058 152.144816 1.948280e-18                    100                     0     0 4.675872e-17                   True
+        30 Rastrigin    Standard_PSO Scheduled_Adaptive_PSO           100         40.189982           43.743184  32.184644  48.637263 9.038555e-13                     83                    17     0 8.134699e-12                   True
+        30 Rastrigin Low_Inertia_PSO Scheduled_Adaptive_PSO           100        -80.861052          -80.332535 -89.516986 -72.426448 1.000000e+00                      1                    99     0 1.000000e+00                  False
+
+=== VALIDATION CHECKS ===
+{
+  "expected_runs": 1600,
+  "actual_runs": 1600,
+  "all_budgets_correct": true,
+  "all_scores_finite": true,
+  "all_runtimes_nonnegative": true,
+  "paired_seeds_per_group": 100,
+  "unique_run_keys": true
+}
+
+=== SAVED FILES ===
+/content/OSE/results/experiment_059_results.csv
+/content/OSE/results/experiment_059_history.csv
+/content/OSE/results/experiment_059_summary.csv
+/content/OSE/results/experiment_059_paired_comparisons.csv
+/content/OSE/results/experiment_059_adaptive_comparisons.csv
+/content/OSE/results/experiment_059_research_record.json
+/content/OSE/results/experiment_059_research_record.md
+
+Experiment 059 complete.
+
+=======================================================
+CELL 177: FILE OPERATIONS AND PATHS
+13: ROOT = Path("/content/OSE")
+180: df.to_csv(OUT / "experiment_060_results.csv", index=False)
+181: df.to_csv(OUT / "experiment_060_history.csv", index=False)
+200: summary.to_csv(OUT / "experiment_060_summary.csv", index=False)
+282: comp.to_csv(
+290: adaptive.to_csv(
+353: with open(OUT / "experiment_060_research_record.json", "w") as f:
+356: with open(OUT / "experiment_060_research_record.md", "w") as f:
+372: "experiment_060_results.csv",
+
+SAVED OUTPUT — LAST 25 LINES:
+        30 Rastrigin           Standard_PSO Feedback_Adaptive_PSO           100        104.183700          105.216517  96.050936 112.560035 2.069687e-18                     99                     1     0 7.793120e-17                   True
+        30 Rastrigin        Low_Inertia_PSO Feedback_Adaptive_PSO           100        -23.966800          -23.737269 -30.748401 -17.610984 1.000000e+00                     24                    76     0 1.000000e+00                  False
+        30 Rastrigin Scheduled_Adaptive_PSO Feedback_Adaptive_PSO           100         59.158996           62.416455  51.902723  66.237669 4.245565e-17                     94                     6     0 9.340243e-16                   True
+
+=== VALIDATION CHECKS ===
+{
+  "expected_runs": 2000,
+  "actual_runs": 2000,
+  "all_budgets_correct": true,
+  "all_scores_finite": true,
+  "all_runtimes_nonnegative": true,
+  "paired_seeds_per_group": 100,
+  "unique_run_keys": true
+}
+
+=== SAVED FILES ===
+/content/OSE/results/experiment_060_results.csv
+/content/OSE/results/experiment_060_history.csv
+/content/OSE/results/experiment_060_summary.csv
+/content/OSE/results/experiment_060_paired_comparisons.csv
+/content/OSE/results/experiment_060_feedback_comparisons.csv
+/content/OSE/results/experiment_060_research_record.json
+/content/OSE/results/experiment_060_research_record.md
+
+Experiment 060 complete.

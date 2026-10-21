@@ -1,0 +1,17 @@
+            metric  valid_comparisons  exact_matches  max_absolute_difference  \
+0  mean_difference                 64             64             2.842171e-14   
+1           ci_low                 64              0             3.567736e-01   
+2          ci_high                 64              0             3.524017e-01   
+3      p_two_sided                 64             64             8.673617e-17   
+4           p_holm                 64             64             8.691236e-17   
+
+   mean_absolute_difference  
+0              1.540597e-15  
+1              5.211339e-02  
+2              4.503906e-02  
+3              7.706413e-18  
+4              8.298858e-18  
+
+[HTML output omitted from text export]
+
+Saved: experiment_064_metric_difference_report.csv
