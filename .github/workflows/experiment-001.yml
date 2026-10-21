@@ -26,13 +26,30 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install numpy pandas
+          python -m pip install numpy pandas
+
+      - name: Verify repository structure
+        run: |
+          python --version
+          python -c "import os, sys; print('Working directory:', os.getcwd()); print('Python path:', sys.path[0])"
+          test -f scripts/run_experiment_001.py
+          find src -maxdepth 3 -type f -print
 
       - name: Run Experiment 001
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           python scripts/run_experiment_001.py
 
+      - name: Verify experiment results
+        run: |
+          test -f results/experiment_001_sphere.csv
+          test -f results/experiment_001_summary.json
+          echo "Experiment output files verified."
+          ls -lh results/experiment_001_sphere.csv results/experiment_001_summary.json
+
       - name: Upload experiment results
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: ose-experiment-001-results
@@ -40,3 +57,4 @@ jobs:
             results/experiment_001_sphere.csv
             results/experiment_001_summary.json
           if-no-files-found: error
+```
