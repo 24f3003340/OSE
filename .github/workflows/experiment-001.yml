@@ -1,0 +1,42 @@
+
+name: OSE Experiment 001
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "src/ose/**"
+      - "scripts/run_experiment_001.py"
+      - ".github/workflows/experiment-001.yml"
+    branches: [main]
+
+jobs:
+  run-experiment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy pandas
+
+      - name: Run Experiment 001
+        run: |
+          python scripts/run_experiment_001.py
+
+      - name: Upload experiment results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ose-experiment-001-results
+          path: |
+            results/experiment_001_sphere.csv
+            results/experiment_001_summary.json
+          if-no-files-found: error
