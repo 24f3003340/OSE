@@ -2,8 +2,10 @@
 import pytest
 
 from src.ose.objectives import sphere
-from src.ose.optimizers import random_search
-
+from src.ose.optimizers import (
+    random_search,
+    particle_swarm_optimization,
+)
 
 def test_random_search_is_reproducible():
     first = random_search(
