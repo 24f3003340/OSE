@@ -4,15 +4,11 @@ name: OSE Experiment 001
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
       - "src/ose/**"
       - "scripts/run_experiment_001.py"
       - ".github/workflows/experiment-001.yml"
-
-permissions:
-  contents: read
 
 jobs:
   run-experiment:
@@ -26,7 +22,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
+          cache: ""
 
       - name: Install dependencies
         run: |
@@ -36,11 +32,10 @@ jobs:
       - name: Verify repository structure
         run: |
           python --version
+          test -f scripts/run_experiment_001.py
           test -f src/ose/experiment_runner.py
           test -f src/ose/objectives.py
           test -f src/ose/optimizers.py
-          test -f scripts/run_experiment_001.py
-          echo "Required files found."
 
       - name: Run Experiment 001
         env:
@@ -48,19 +43,18 @@ jobs:
         run: |
           python scripts/run_experiment_001.py
 
-      - name: Verify experiment outputs
+      - name: Verify experiment results
         run: |
           test -s results/experiment_001_sphere.csv
           test -s results/experiment_001_summary.json
-          python -m json.tool results/experiment_001_summary.json
           echo "Experiment outputs verified."
+          ls -lh results/experiment_001_sphere.csv results/experiment_001_summary.json
 
       - name: Upload experiment results
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ose-experiment-001-results
           path: |
             results/experiment_001_sphere.csv
             results/experiment_001_summary.json
-          if-no-files-found: warn
+          if-no-files-found: error
