@@ -1,0 +1,58 @@
+
+name: OSE Experiment 002
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/run_experiment_002.py"
+      - "src/ose/**"
+      - ".github/workflows/experiment-002.yml"
+
+jobs:
+  run-experiment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: ""
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas
+
+      - name: Verify required files
+        run: |
+          test -f scripts/run_experiment_002.py
+          test -f src/ose/objectives.py
+          test -f src/ose/optimizers.py
+          test -f src/ose/experiment_runner.py
+
+      - name: Run Experiment 002
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python scripts/run_experiment_002.py
+
+      - name: Verify results
+        run: |
+          test -s results/experiment_002_comparison.csv
+          test -s results/experiment_002_summary.json
+          echo "Experiment 002 results verified."
+
+      - name: Upload experiment results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ose-experiment-002-results
+          path: |
+            results/experiment_002_comparison.csv
+            results/experiment_002_summary.json
+          if-no-files-found: error
